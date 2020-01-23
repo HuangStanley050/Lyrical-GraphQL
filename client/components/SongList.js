@@ -20,7 +20,7 @@ class SongList extends Component {
     if (!this.props.data.loading) {
       return this.props.data.songs.map(({ title, id }) => {
         return (
-          <li key={id}>
+          <li className="collection-items" key={id}>
             {title}
             <i onClick={() => this.onSongDelete(id)} className="material-icons">
               delete
